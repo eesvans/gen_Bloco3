@@ -6,48 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home </a>
-            </li>
-            <li>
-                <a href="contato.html">Contato </a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="index.html">Home </a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <header>
-            <h1>Sobre o Evandro</h1>
-        </header>
 
-        <section>
-            <p>
-                Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.
-            </p>
-            <p>
-                Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.
-            </p>
-        </section>
+        <h1 class="center bg-h">Sobre o Evandro</h1>
+
+        <div class="container">
+            <div>
+                <img class="br-50 wh-500 p-30" src="https://avatars.githubusercontent.com/u/94861781?v=4"
+                    alt="Foto do criador desse conteudo" />
+            </div>
+            <section class="p-30">
+                <p class="justify">
+                    Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.
+                </p>
+                <p class="justify">
+                    Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.
+                </p>
+            </section>
+        </div>
+
     </main>
 
-    <img src="https://avatars.githubusercontent.com/u/94861781?v=4" alt="Foto do criador desse conteudo" />
-    <br />
-    <br />
-    <div class="video">
+    <h2 class="center bg-f">Relato em video: </h2>
+    <div class="video container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/w_B90O-yVuA" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
 
-    <br />
     <footer>
-        Esse é o Rodapé do Index
+        <div class="container">
+            <a href="https://www.linkedin.com/in/eesvans/" target="_blank"><img class="tm-social p-footer"
+                    src="./assets/imagens/linkedin.png" alt="icone linkedin"></a>
+            <a href="https://github.com/eesvans" target="_blank"><img class="tm-social p-footer"
+                    src="./assets/imagens/github.png" alt="icone github"></a>
+            <p>Evandro - Sobre mim &copy</p>
+        </div>
+
     </footer>
 
 </body>
