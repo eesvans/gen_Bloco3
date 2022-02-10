@@ -24,13 +24,9 @@ h2{
     background: linear-gradient(#008b8b,#FEFEFE);
 }
 
-.bg-f{
-    background: linear-gradient(#FEFEFE,#008b8b);
-    padding: 2em 0;
-}
 
 .video{
-    background-color: #008b8b;
+    
 }
 .center{
     text-align: center;
@@ -86,10 +82,18 @@ h2{
 }
 
 footer{
-    background-color:#008b8b;
+  /*  background-color:#008b8b; */
+    background: linear-gradient(#FEFEFE,#008b8b);
     color: #ffffff;
     margin: 0;
-    padding: 18px 0;
+    padding: 2em 0;
+}
+
+.rodapecontato{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Estilos da página contato.html */
