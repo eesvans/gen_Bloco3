@@ -25,22 +25,22 @@
 
     <main>
         
-        <h1 class="center bg-h">Entre em contato comigo</h1>
+        <h1 class="center eSup-50">Entre em contato!</h1>
 
         <div class="container">
             <div>
-                <form>
+                <form class="eSup-50">
                     <label for="nome">Nome: </label><br>
-                    <input type="text" id="nome" />
-                    <br>
+                    <input type="text" id="nome" onkeyup="validaNome()">
+                    <div id="txtNome"></div>
                     <br>
                     <label for="email">E-mail: </label><br>
-                    <input type="email" id="email" />
-                    <br>
+                    <input type="email" id="email" onkeyup="validaEmail()" >
+                    <div id="txtEmail"></div>
                     <br>
                     <label for="assunto"> Assunto: </label><br>
-                    <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-                    <br>
+                    <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                    <div id="txtAssunto"></div>
                     <br>
                     <label for="senha">Senha: </label><br>
                     <input type="password" id="senha">
@@ -49,20 +49,46 @@
                     <label for="data">Data: </label><br>
                     <input type="date" id="data">
                     <br>
-                    <br>
-                    <button>Enviar</button>
                 </form>
+                <br>
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email">Email</label>
+                    <input type="radio" name="contato" value="email" id="radio-email">
+                    <label for="radio-telefone">Telefone</label>
+                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                    <label for="radio-whatsapp">WhatsApp</label>
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                <br>
+                <label class="checkbox"> Gostaria de receber nossas novidades por e-mail?</label>
+                <input type="checkbox" checked>
+                <br>
+                <br>
+                <input type="submit" value="Enviar" class="enviarButton" onclick="enviar()">
+                <!--<button onclick="enviar()">Enviar</button>-->
+               
             </div>
+
             <div class="ml-50">
                 <h3>Possível localização</h3>
                 <p>Talvez este ser se encontre aqui: </p>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1Pyaw3goVC3Tl3kVqdiAJi86BWWQ&ehbc=2E312F"
-                    width="520" height="360"></iframe>
+                <iframe id="mapa" src="https://www.google.com/maps/d/embed?mid=1Pyaw3goVC3Tl3kVqdiAJi86BWWQ&ehbc=2E312F"
+                    width="520" height="360" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
             </div>
         </div>
     
     </main>
-    <footer class="rodapecontato">
+    <footer class="eSup-100">
         <div class="container">
             <a href="https://www.linkedin.com/in/eesvans/" target="_blank"><img class="tm-social p-footer"
                     src="./assets/imagens/linkedin.png" alt="icone linkedin"></a>
@@ -71,6 +97,8 @@
             <p>Evandro - Sobre mim &copy</p>
         </div>
     </footer>
-</body>
 
+    <script src="./assets/js/script.js"></script>
+
+</body>
 </html>

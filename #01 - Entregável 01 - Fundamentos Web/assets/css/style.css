@@ -4,12 +4,13 @@
 }
 
 header{
-    background-color:#008b8b;
+    background: linear-gradient(#008b8b,#FEFEFE);
     margin: 0;
-    padding: 15px;
+    padding: 1em 0 4em 0;
 }
 
 body{
+    height: 100vh;
     margin:0;
     padding: 0;
 }
@@ -19,11 +20,6 @@ h1{
 h2{
     margin: 0;
 }
-.bg-h{
-    padding: 2em 0;
-    background: linear-gradient(#008b8b,#FEFEFE);
-}
-
 
 .video{
     
@@ -65,7 +61,13 @@ h2{
 .br-50{
     border-radius: 50%;
 }
+.eSup-50{
+    margin-top: 50px;
+}
 
+.eSup-100{
+    margin-top: 100px;
+}
 .wh{
     width:500px;
     height: 500px;
@@ -82,12 +84,13 @@ h2{
 }
 
 footer{
-  /*  background-color:#008b8b; */
     background: linear-gradient(#FEFEFE,#008b8b);
     color: #ffffff;
     margin: 0;
     padding: 2em 0;
 }
+
+/* Rodapé fixo na página:
 
 .rodapecontato{
     position: fixed;
@@ -95,9 +98,28 @@ footer{
     bottom: 0;
     width: 100%;
 }
+*/
 
 /* Estilos da página contato.html */
 
 .ml-50{
     margin-left: 50px;
+}
+
+.enviarButton{
+    width: 40%;
+    padding: 9px 0;
+    background-color: #ffd700;
+    color:#FEFEFE;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviarButton:hover{
+    background-color: #ffd700;
+    transform: scale(1.2);
 }
