@@ -31,7 +31,7 @@ function validaNome(){
 
 function validaEmail(){
     let txtEmail = document.querySelector('#txtEmail')
-    if(email.value.indexOf('@') == -1){
+    if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1){
         txtEmail.innerHTML='E-mail inválido!'
         txtEmail.style.color='red'
     }else{
@@ -47,6 +47,7 @@ function validaAssunto(){
         txtAssunto.innerHTML='Texto não deve ultrapassar 100 caracteres'
         txtAssunto.style.color='red'
         txtAssunto.style.display='block'
+        assuntoOk=false //caso não force o False nesta linha, a função enviar() não respeita o && e envia o formulário
     }else{
         txtAssunto.style.display='none'
         assuntoOk=true
