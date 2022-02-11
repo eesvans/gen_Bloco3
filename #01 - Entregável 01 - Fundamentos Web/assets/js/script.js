@@ -47,7 +47,7 @@ function validaAssunto(){
         txtAssunto.innerHTML='Texto não deve ultrapassar 100 caracteres'
         txtAssunto.style.color='red'
         txtAssunto.style.display='block'
-        assuntoOk=false //caso não force o False nesta linha, a função enviar() não respeita o && e envia o formulário
+        assuntoOk=false // é necessário forçar o false, caso contrário ao digitar qualquer coisa no campo 'assunto' a função validaAssunto() já irá alterar o valor da variável para true.
     }else{
         txtAssunto.style.display='none'
         assuntoOk=true
