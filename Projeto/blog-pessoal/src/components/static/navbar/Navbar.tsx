@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <>
             <AppBar position="static">
-                <Toolbar variant="dense" style={{backgroundColor: "#000000"}}>
+                <Toolbar variant="dense" style={{backgroundColor: "#05040B"}}>
                     <Box style={{ cursor: "pointer"}}>
                         <Typography variant="h5" color="inherit">
                             BlogPessoal
@@ -39,9 +39,9 @@ function Navbar() {
                             </Typography>
                         </Box>
                     </Box>
-
                 </Toolbar>
             </AppBar>
+            
         </>
     )
 }

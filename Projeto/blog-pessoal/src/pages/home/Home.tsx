@@ -5,7 +5,7 @@ import './Home.css';
 function Home() {
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#000000" }}>
+            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#05040B" }}>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }}>Seja bem vindo(a)!</Typography>
@@ -18,7 +18,7 @@ function Home() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="https://i.imgur.com/vEGXDRP.gif" alt="" width="540px" height="px" />
+                    <img src="https://i.imgur.com/vEGXDRP.gif" alt="" width="540px" height="304" />
                 </Grid>
                 <Grid xs={12} style={{ backgroundColor: "white" }}>
                 </Grid>
